@@ -9,7 +9,7 @@ import google.generativeai as genai
 
 # Load environment variables
 load_dotenv()
-genai.configure(api_key=os.getenv("AIzaSyDnmUT1_OW26zhW79Oe4Hxr4iv8-qk9x-Y"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Function to send data to Gemini model
 def get_gemini_response(input, pdf_content, prompt):
